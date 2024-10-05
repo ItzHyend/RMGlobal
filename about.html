@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/css/abt.css">
+    <link rel="icon" type="image/x-icon" href="assets/image/RM GLOBAL FAVICON.png">
+</head>
+
+<body>
+
+    <header style="position: fixed;">
+        <div class="logo">RM GLOBAL</div>
+        <div class="hamburgar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="active">About</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#login">login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="left">
+            <img src="assets/image/RM Global logo.png">
+        </div>
+        <div class="right">
+            <div class="content">
+                <p>
+                    Welcome to RM Global, where innovation meets excellence.
+                    <br>
+                    <br>
+                    We are dedicated to providing a wide range of high-quality products that cater to <br>
+                    individuals aged 18 and above. At RM Global, our mission is to lead our field by <br>
+                    consistently delivering exceptional value and unparalleled customer experiences.
+
+                <div>
+                    <button class="btn">Learn more</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <botton class="go-top-btn">
+        <a href="#">
+            <img src="assets/image/up-arrow.png" alt="arrow up">
+        </a>
+
+</body>
+
+<script>
+
+    let menu_icon_box = document.querySelector(".nav-bar");
+    let box = document.querySelector(".nav-bar");
+
+
+    menu_icon_box.onclick = function () {
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active_box");
+    }
+
+</script>
+
+<script>
+    hamburgar = document.querySelector(".hamburgar");
+    hamburgar.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+</html>
